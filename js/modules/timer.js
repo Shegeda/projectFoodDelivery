@@ -1,7 +1,5 @@
-function timer() {
+function timer(id, deadline) {
     // Timer
-
-    const deadLine = '2022-05-11';
 
     // Расчет
     function getTimeRemaining(endtime) {
@@ -56,7 +54,7 @@ function timer() {
 
     }
 
-    setClock('.timer', deadLine);
+    setClock(id, deadline);
 }
 
-module.exports = timer;
+export default timer;
